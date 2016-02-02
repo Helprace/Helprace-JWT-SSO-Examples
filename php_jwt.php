@@ -32,5 +32,5 @@ $token = array(
 $jwt = JWT::encode($token, $key);
 $location = "https://auth.helprace.com/jwt/" . $subdomain ."?jwt=" . $jwt;
 
-// Redirect
+// Redirect to Helrpace with the payload
 header("Location: " . $location);
