@@ -25,7 +25,8 @@ $token = array(
   "organization_url"    =>  "http://example.com",	// Link to the organization website (starting with http or https)
   "job_title"           =>  "My Job Title",		// Job title
   "avatar"              =>  "",				// URL to user's avatar (starting with http or https)
-  "role"                =>  "user"                  	// Role could be: user, agent, admin, owner
+  "role"                =>  "user",                  	// Role could be: user, agent, admin, owner
+  "external_id"         =>  "1"                   	// External ID can be used to uniquely identify user. If not specified, email is used as a unique user ID.
 );
 
 $jwt = JWT::encode($token, $key);
